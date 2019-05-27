@@ -27,7 +27,10 @@ class NewNoteViewController: UIViewController {
         super.viewDidLoad()
         
         let saveButton=UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveNote))
-        self.navigationItem.rightBarButtonItem=saveButton
+        
+        let shareButton=UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareNote))
+//        self.navigationItem.rightBarButtonItem=saveButton
+        self.navigationItem.rightBarButtonItems = [saveButton,shareButton]
         
         
         
@@ -41,6 +44,22 @@ class NewNoteViewController: UIViewController {
             self.textOutlet.text = note.text
             
         }
+    }
+    
+    //MARK: - share note method
+    
+    @objc func shareNote(){
+        
+        var noteText = selectedNote?.text
+        
+        
+        let activityVC=UIActivityViewController(activityItems: [noteText], applicationActivities: nil)
+        
+        present(activityVC, animated: true, completion: nil)
+        
+        
+        
+        
     }
     
     

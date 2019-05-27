@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         editButtonItem.action=#selector(editMethod)
         self.navigationItem.leftBarButtonItem=editButtonItem
         
+        self.navigationController?.navigationBar.barTintColor=UIColor.cyan
+        
         
 //        self.navigationItem.leftBarButtonItem=self.editButtonItem
         
@@ -93,11 +95,11 @@ extension ViewController:UITableViewDataSource,UITableViewDelegate{
         
         if(notesArray[indexPath.row].title != ""){
         cell.textLabel?.text = notesArray[indexPath.row].title
-            cell.textLabel?.textColor=UIColor.cyan
+            
         }
         else{
             cell.textLabel?.text = notesArray[indexPath.row].text
-            cell.textLabel?.textColor=UIColor.cyan
+            
         }
         
         

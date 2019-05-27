@@ -14,7 +14,6 @@
 		55EA8B5D229A2EC6003F1F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EA8B5C229A2EC6003F1F95 /* Assets.xcassets */; };
 		55EA8B60229A2EC6003F1F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EA8B5E229A2EC6003F1F95 /* LaunchScreen.storyboard */; };
 		55EA8B68229A3D10003F1F95 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA8B67229A3D10003F1F95 /* NewNoteViewController.swift */; };
-		55EA8B6D229A608F003F1F95 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA8B6C229A608F003F1F95 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		55EA8B5F229A2EC6003F1F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55EA8B61229A2EC6003F1F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55EA8B67229A3D10003F1F95 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
-		55EA8B6C229A608F003F1F95 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +64,6 @@
 				55EA8B6B229A3D3B003F1F95 /* SupportingFiles */,
 				55EA8B61229A2EC6003F1F95 /* Info.plist */,
 				55EA8B59229A2EC2003F1F95 /* Noted_.xcdatamodeld */,
-				55EA8B6C229A608F003F1F95 /* TableViewController.swift */,
 			);
 			path = "Noted!";
 			sourceTree = "<group>";
@@ -171,7 +168,6 @@
 				55EA8B55229A2EC2003F1F95 /* ViewController.swift in Sources */,
 				55EA8B68229A3D10003F1F95 /* NewNoteViewController.swift in Sources */,
 				55EA8B5B229A2EC2003F1F95 /* Noted_.xcdatamodeld in Sources */,
-				55EA8B6D229A608F003F1F95 /* TableViewController.swift in Sources */,
 				55EA8B53229A2EC2003F1F95 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
