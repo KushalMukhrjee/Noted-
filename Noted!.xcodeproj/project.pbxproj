@@ -13,6 +13,8 @@
 		55EA8B5B229A2EC2003F1F95 /* Noted_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55EA8B59229A2EC2003F1F95 /* Noted_.xcdatamodeld */; };
 		55EA8B5D229A2EC6003F1F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EA8B5C229A2EC6003F1F95 /* Assets.xcassets */; };
 		55EA8B60229A2EC6003F1F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EA8B5E229A2EC6003F1F95 /* LaunchScreen.storyboard */; };
+		55EA8B68229A3D10003F1F95 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA8B67229A3D10003F1F95 /* NewNoteViewController.swift */; };
+		55EA8B6D229A608F003F1F95 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA8B6C229A608F003F1F95 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		55EA8B5C229A2EC6003F1F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55EA8B5F229A2EC6003F1F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55EA8B61229A2EC6003F1F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55EA8B67229A3D10003F1F95 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
+		55EA8B6C229A608F003F1F95 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				55EA8B52229A2EC2003F1F95 /* AppDelegate.swift */,
-				55EA8B54229A2EC2003F1F95 /* ViewController.swift */,
-				55EA8B56229A2EC2003F1F95 /* Main.storyboard */,
-				55EA8B5C229A2EC6003F1F95 /* Assets.xcassets */,
-				55EA8B5E229A2EC6003F1F95 /* LaunchScreen.storyboard */,
+				55EA8B69229A3D1E003F1F95 /* Controller */,
+				55EA8B6A229A3D2D003F1F95 /* View */,
+				55EA8B6B229A3D3B003F1F95 /* SupportingFiles */,
 				55EA8B61229A2EC6003F1F95 /* Info.plist */,
 				55EA8B59229A2EC2003F1F95 /* Noted_.xcdatamodeld */,
+				55EA8B6C229A608F003F1F95 /* TableViewController.swift */,
 			);
 			path = "Noted!";
+			sourceTree = "<group>";
+		};
+		55EA8B69229A3D1E003F1F95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55EA8B67229A3D10003F1F95 /* NewNoteViewController.swift */,
+				55EA8B54229A2EC2003F1F95 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		55EA8B6A229A3D2D003F1F95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55EA8B56229A2EC2003F1F95 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55EA8B6B229A3D3B003F1F95 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				55EA8B5C229A2EC6003F1F95 /* Assets.xcassets */,
+				55EA8B5E229A2EC6003F1F95 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55EA8B55229A2EC2003F1F95 /* ViewController.swift in Sources */,
+				55EA8B68229A3D10003F1F95 /* NewNoteViewController.swift in Sources */,
 				55EA8B5B229A2EC2003F1F95 /* Noted_.xcdatamodeld in Sources */,
+				55EA8B6D229A608F003F1F95 /* TableViewController.swift in Sources */,
 				55EA8B53229A2EC2003F1F95 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "KushalMukherjee.Noted-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "KushalMukherjee.Noted-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
