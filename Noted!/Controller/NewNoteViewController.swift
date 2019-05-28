@@ -31,11 +31,7 @@ class NewNoteViewController: UIViewController {
         let shareButton=UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareNote))
 //        self.navigationItem.rightBarButtonItem=saveButton
         self.navigationItem.rightBarButtonItems = [saveButton,shareButton]
-        
-        
-        
-
-        // Do any additional setup after loading the view.
+   
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -50,10 +46,10 @@ class NewNoteViewController: UIViewController {
     
     @objc func shareNote(){
         
-        var noteText = selectedNote?.text
+        let noteText = selectedNote?.text
         
         
-        let activityVC=UIActivityViewController(activityItems: [noteText], applicationActivities: nil)
+        let activityVC=UIActivityViewController(activityItems: [noteText as Any], applicationActivities: nil)
         
         present(activityVC, animated: true, completion: nil)
         
@@ -103,17 +99,6 @@ class NewNoteViewController: UIViewController {
     func deleteNote(note:Note){
         context.delete(note)
     }
-    
-    
-//    //MARK: - get note method
-//    
-//    func getNote(){
-//        
-//        let fetchNote : NSFetchRequest<Note> = Note.fetchRequest()
-//        
-//        
-//        
-//    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.textOutlet.resignFirstResponder()

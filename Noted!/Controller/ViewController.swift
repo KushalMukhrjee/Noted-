@@ -121,7 +121,7 @@ extension ViewController:UITableViewDataSource,UITableViewDelegate{
         if(editingStyle == .delete){
             print("Delete rows now")
             
-            var deleteNoteObj = notesArray[indexPath.row]
+            let deleteNoteObj = notesArray[indexPath.row]
             context.delete(deleteNoteObj)
             do{
                 try context.save()
