@@ -113,6 +113,7 @@
 		5533647B229E812000F46296 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55336411229E812000F46296 /* TextField.swift */; };
 		5533647C229E812000F46296 /* PickerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55336412229E812000F46296 /* PickerStyle.swift */; };
 		5533647D229E812000F46296 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55336413229E812000F46296 /* Button.swift */; };
+		5563CAE823040FEB002C33F8 /* NotesNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5563CAE723040FEB002C33F8 /* NotesNavigationController.swift */; };
 		55EA8B53229A2EC2003F1F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA8B52229A2EC2003F1F95 /* AppDelegate.swift */; };
 		55EA8B55229A2EC2003F1F95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA8B54229A2EC2003F1F95 /* ViewController.swift */; };
 		55EA8B58229A2EC2003F1F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EA8B56229A2EC2003F1F95 /* Main.storyboard */; };
@@ -121,7 +122,6 @@
 		55EA8B60229A2EC6003F1F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EA8B5E229A2EC6003F1F95 /* LaunchScreen.storyboard */; };
 		55EA8B68229A3D10003F1F95 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA8B67229A3D10003F1F95 /* NewNoteViewController.swift */; };
 		55EA8B8D229C2FD7003F1F95 /* UnlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA8B8C229C2FD7003F1F95 /* UnlockViewController.swift */; };
-		55EA8B8F229C32A0003F1F95 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA8B8E229C32A0003F1F95 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -231,6 +231,7 @@
 		55336411229E812000F46296 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		55336412229E812000F46296 /* PickerStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerStyle.swift; sourceTree = "<group>"; };
 		55336413229E812000F46296 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		5563CAE723040FEB002C33F8 /* NotesNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesNavigationController.swift; sourceTree = "<group>"; };
 		55EA8B4F229A2EC2003F1F95 /* Noted!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Noted!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EA8B52229A2EC2003F1F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55EA8B54229A2EC2003F1F95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -241,7 +242,6 @@
 		55EA8B61229A2EC6003F1F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55EA8B67229A3D10003F1F95 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
 		55EA8B8C229C2FD7003F1F95 /* UnlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockViewController.swift; sourceTree = "<group>"; };
-		55EA8B8E229C32A0003F1F95 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -660,7 +660,7 @@
 				55EA8B8C229C2FD7003F1F95 /* UnlockViewController.swift */,
 				55EA8B67229A3D10003F1F95 /* NewNoteViewController.swift */,
 				55EA8B54229A2EC2003F1F95 /* ViewController.swift */,
-				55EA8B8E229C32A0003F1F95 /* NavigationController.swift */,
+				5563CAE723040FEB002C33F8 /* NotesNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -789,8 +789,8 @@
 				55336449229E812000F46296 /* GalleryDisplacedViewsDataSource.swift in Sources */,
 				5533644C229E812000F46296 /* GalleryViewController.swift in Sources */,
 				55336457229E812000F46296 /* CurrencyCell.swift in Sources */,
+				5563CAE823040FEB002C33F8 /* NotesNavigationController.swift in Sources */,
 				5533646D229E812000F46296 /* Camera.swift in Sources */,
-				55EA8B8F229C32A0003F1F95 /* NavigationController.swift in Sources */,
 				55336470229E812000F46296 /* PhotoLayout.swift in Sources */,
 				5533644E229E812000F46296 /* VideoViewController.swift in Sources */,
 				55336437229E812000F46296 /* UIView.swift in Sources */,

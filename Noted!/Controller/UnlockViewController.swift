@@ -25,23 +25,7 @@ class UnlockViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         userAuthetication()
-        //context for local authentication
-        
-//                else{
-//
-//
-//                    let err = error as! LAError
-//                    print(err.errorCode)
-//                    //error code for enter password
-//                    if(err.errorCode == -3){
-//                        self.enterPassword()
-//
-//
-//        print("here---------")
-//
-//    }
-//                }
-        }
+    }
     
     @IBAction func enterPasswordAction(_ sender: UIButton) {
             userAuthetication()
@@ -62,7 +46,7 @@ class UnlockViewController: UIViewController {
                     
                     
                     print("Auth Success")
-                    let vcObj=UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "navigationvc") as! NavigationController
+                    let vcObj=UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "navigationvc") as! NotesNavigationController
 //                    vcObj.loadView()
                     self.present(vcObj, animated: true, completion: nil)
                 }
@@ -71,7 +55,7 @@ class UnlockViewController: UIViewController {
         }
         }
         else{
-            let vcObj=UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "navigationvc") as! NavigationController
+            let vcObj=UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "navigationvc") as! NotesNavigationController
 //            vcObj.loadView()
             self.present(vcObj, animated: true, completion: nil)
         }

@@ -34,9 +34,7 @@ class NewNoteViewController: UIViewController {
         let shareButton=UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareNote))
 //        self.navigationItem.rightBarButtonItem=saveButton
         
-        let reminderButton=UIBarButtonItem(image: UIImage(named: "alarmicon"), landscapeImagePhone: nil, style: .done, target: self, action: #selector(reminderMethod))
-        
-        self.navigationItem.rightBarButtonItems = [saveButton,shareButton,reminderButton]
+        self.navigationItem.rightBarButtonItems = [saveButton,shareButton]
         
    
     }
@@ -54,8 +52,6 @@ class NewNoteViewController: UIViewController {
     @objc func shareNote(){
         
         let noteText = selectedNote?.text
-        
-        
         let activityVC=UIActivityViewController(activityItems: [noteText as Any], applicationActivities: nil)
         
         present(activityVC, animated: true, completion: nil)
@@ -108,27 +104,6 @@ class NewNoteViewController: UIViewController {
         context.delete(note)
     }
     
-    
-    // MARK:- reminder method
-    
-    @objc func reminderMethod(){
-        
-        print("reminder")
-        
-        
-        
-        var alert = UIAlertController(style: .actionSheet, source: self.view, title: "", message: nil, tintColor: nil)
-        alert.addDatePicker(mode: .dateAndTime, date: Date()) { (date) in
-            
-        }
-        alert.addAction(title: "Done")
-        present(alert, animated: true, completion: nil)
-        
-        
-        
-        
-        
-    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.textOutlet.resignFirstResponder()

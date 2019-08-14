@@ -1,14 +1,14 @@
 //
-//  NavigationController.swift
+//  NotesNavigationControllerViewController.swift
 //  Noted!
 //
-//  Created by Kushal Mukherjee on 27/05/19.
+//  Created by Kushal Mukherjee on 14/08/19.
 //  Copyright © 2019 Kushal Mukherjee. All rights reserved.
 //
 
 import UIKit
 
-class NavigationController: UINavigationController {
+class NotesNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cjW-vN-cy2">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cjW-vN-cy2">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="notescell" id="bN2-77-Nzv">
@@ -35,7 +34,14 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cjW-vN-cy2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Mb-S9-dzd"/>
+                            <constraint firstItem="cjW-vN-cy2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Bsl-79-e4L"/>
+                            <constraint firstItem="cjW-vN-cy2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DwV-Vv-fFZ"/>
+                            <constraint firstItem="cjW-vN-cy2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nea-5D-ezt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Notes" id="AGg-A2-TeE">
@@ -61,21 +67,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V7R-Qx-xTk">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V7R-Qx-xTk">
                                 <rect key="frame" x="16" y="140" width="343" height="507"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RPb-e6-Rhm">
-                                <rect key="frame" x="16" y="82" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RPb-e6-Rhm">
+                                <rect key="frame" x="16" y="82" width="343" height="36"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="V7R-Qx-xTk" secondAttribute="bottom" constant="20" id="6Zr-FH-MXf"/>
+                            <constraint firstItem="V7R-Qx-xTk" firstAttribute="leading" secondItem="2ZT-Hb-E1z" secondAttribute="leading" constant="16" id="BYY-TD-KNL"/>
+                            <constraint firstItem="2ZT-Hb-E1z" firstAttribute="trailing" secondItem="V7R-Qx-xTk" secondAttribute="trailing" constant="16" id="PWk-3F-l4M"/>
+                            <constraint firstItem="V7R-Qx-xTk" firstAttribute="top" secondItem="RPb-e6-Rhm" secondAttribute="bottom" constant="22" id="Zgv-Uc-nEV"/>
+                            <constraint firstItem="RPb-e6-Rhm" firstAttribute="top" secondItem="2ZT-Hb-E1z" secondAttribute="top" constant="18" id="eAl-4d-HLJ"/>
+                            <constraint firstItem="2ZT-Hb-E1z" firstAttribute="trailing" secondItem="RPb-e6-Rhm" secondAttribute="trailing" constant="16" id="hSR-QL-qOA"/>
+                            <constraint firstItem="RPb-e6-Rhm" firstAttribute="leading" secondItem="2ZT-Hb-E1z" secondAttribute="leading" constant="16" id="vGL-tP-g1g"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2ZT-Hb-E1z"/>
                     </view>
                     <toolbarItems/>
@@ -97,9 +110,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7da-K0-sr9">
-                                <rect key="frame" x="70" y="315" width="249" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7da-K0-sr9">
+                                <rect key="frame" x="63" y="315.5" width="249" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Please enter your password"/>
                                 <connections>
@@ -108,6 +120,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7da-K0-sr9" firstAttribute="centerY" secondItem="GEE-k3-pCx" secondAttribute="centerY" id="ADx-nk-0Ub"/>
+                            <constraint firstItem="7da-K0-sr9" firstAttribute="centerX" secondItem="GEE-k3-pCx" secondAttribute="centerX" id="zbm-cD-KT7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="E1c-Cd-dSj"/>
                     </view>
                 </viewController>
@@ -115,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="-519.20000000000005" y="686.80659670164926"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Notes Navigation Controller-->
         <scene sceneID="Oz6-5s-sf6">
             <objects>
-                <navigationController restorationIdentifier="navigationvc" storyboardIdentifier="navigationvc" automaticallyAdjustsScrollViewInsets="NO" id="IWI-kA-PdM" customClass="NavigationController" customModule="Noted_" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="navigationvc" storyboardIdentifier="navigationvc" automaticallyAdjustsScrollViewInsets="NO" id="IWI-kA-PdM" customClass="NotesNavigationController" customModule="Noted_" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2PK-Cv-j9P">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
