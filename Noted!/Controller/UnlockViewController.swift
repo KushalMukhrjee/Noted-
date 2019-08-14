@@ -63,7 +63,7 @@ class UnlockViewController: UIViewController {
                     
                     print("Auth Success")
                     let vcObj=UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "navigationvc") as! NavigationController
-                    vcObj.loadView()
+//                    vcObj.loadView()
                     self.present(vcObj, animated: true, completion: nil)
                 }
                 
@@ -72,7 +72,7 @@ class UnlockViewController: UIViewController {
         }
         else{
             let vcObj=UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "navigationvc") as! NavigationController
-            vcObj.loadView()
+//            vcObj.loadView()
             self.present(vcObj, animated: true, completion: nil)
         }
         

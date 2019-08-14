@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+
 class NewNoteViewController: UIViewController {
 
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -26,11 +27,17 @@ class NewNoteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
+        
         let saveButton=UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveNote))
         
         let shareButton=UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareNote))
 //        self.navigationItem.rightBarButtonItem=saveButton
-        self.navigationItem.rightBarButtonItems = [saveButton,shareButton]
+        
+        let reminderButton=UIBarButtonItem(image: UIImage(named: "alarmicon"), landscapeImagePhone: nil, style: .done, target: self, action: #selector(reminderMethod))
+        
+        self.navigationItem.rightBarButtonItems = [saveButton,shareButton,reminderButton]
+        
    
     }
     
@@ -52,6 +59,7 @@ class NewNoteViewController: UIViewController {
         let activityVC=UIActivityViewController(activityItems: [noteText as Any], applicationActivities: nil)
         
         present(activityVC, animated: true, completion: nil)
+        
         
         
         
@@ -98,6 +106,28 @@ class NewNoteViewController: UIViewController {
     
     func deleteNote(note:Note){
         context.delete(note)
+    }
+    
+    
+    // MARK:- reminder method
+    
+    @objc func reminderMethod(){
+        
+        print("reminder")
+        
+        
+        
+        var alert = UIAlertController(style: .actionSheet, source: self.view, title: "", message: nil, tintColor: nil)
+        alert.addDatePicker(mode: .dateAndTime, date: Date()) { (date) in
+            
+        }
+        alert.addAction(title: "Done")
+        present(alert, animated: true, completion: nil)
+        
+        
+        
+        
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
